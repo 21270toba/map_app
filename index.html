@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>位置情報共有アプリ サンプル</title>
+
+    <!-- Leaflet.js(マップを扱うためのライブラリ) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.3.0/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.3.0/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!-- アプリ本体 -->
+    <script src="js/config.js"></script>
+    <script src="js/app.js"></script>
+  </head>
+
+  <body>
+    <div id="info-wrap">
+      【<span id="login-user-name"></span>】として利用中<br />
+      位置情報の更新
+      <input id="update-button" type="checkbox" checked />
+      <div id="check"></div>
+    </div>
+
+    <div id="map-canvas"></div>
+  </body>
+</html>
